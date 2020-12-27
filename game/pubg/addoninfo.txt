@@ -1,0 +1,25 @@
+"AddonInfo"
+
+{
+	maps			"dota_solo dota_duo dota_zombie_night dota_zombie_survival"
+	"IsPlayable"	"1"
+	"HeroGuidesSupported" "0"
+	"dota_solo"
+	{
+					"MaxPlayers"                    "10"
+	}
+	"dota_duo"
+	{
+					"MaxPlayers"                    "10"
+	}
+	"dota_zombie_night"
+	{
+					"MaxPlayers"                    "9"
+	}	
+	"dota_zombie_survival"
+	{
+					"MaxPlayers"                    "2"
+	}	
+
+
+}

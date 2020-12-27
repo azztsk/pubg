@@ -1,0 +1,135 @@
+"dota_shops"
+{
+	"consumables"
+	{
+
+	}
+
+	"attributes"
+	{
+		"item"		"item_magic_wand_custom"
+		"item"		"item_boots"
+		"item"		"item_travel_boots"
+		"item"		"item_travel_boots_2"
+		"item"		"item_tranquil_boots"
+		"item"		"item_phase_boots"
+		"item"		"item_bonus_health1"
+		"item"		"item_maelstrom"
+		"item"		"item_bfury"
+		
+	}
+
+	"weapons_armor"
+	{
+		"item"		"item_force_staff_custom"
+		"item"		"item_aether_lens_custom"
+		"item"		"item_glimmer_cape_custom"
+		"item"		"item_rod_of_atos_custom"
+		"item"		"item_cyclone_custom"
+		"item"		"item_blink"
+		"item"		"item_echo_sabre"
+		"item"		"item_blade_mail"
+		"item"		"item_ghost"
+		"item"		"item_black_king_bar"
+		"item"		"item_aeon_disk_custom"
+		"item"		"item_octarine_core1"
+		"item"		"item_nullifier"
+		"item"		"item_shivas_guard"
+	}
+			
+	"misc"
+	{
+
+
+	}
+	
+	// Level 1 - Green Recipes
+	"basics"
+	{
+
+	}
+
+	// Level 2 - Blue Recipes
+	"support"
+	{
+
+	}
+				
+	"magics"			
+	{
+
+	}
+		
+	// Level 3 - Purple Recipes	
+	"defense"
+	{
+
+	}
+	
+	"weapons"
+	{
+
+	}
+
+	// Level 4 - Orange / Orb / Artifacts				
+	"artifacts"
+	{
+
+	
+	}
+
+	"sideshop1"
+	{
+		"item"		"item_magic_wand_custom"
+		"item"		"item_boots"
+		"item"		"item_travel_boots"
+		"item"		"item_travel_boots_2"
+		"item"		"item_tranquil_boots"
+		"item"		"item_phase_boots"
+		"item"		"item_bonus_health1"
+		"item"		"item_maelstrom"
+		"item"		"item_bfury"	}
+
+	"sideshop2"
+	{
+		"item"		"item_force_staff_custom"
+		"item"		"item_aether_lens_custom"
+		"item"		"item_glimmer_cape_custom"
+		"item"		"item_rod_of_atos_custom"
+		"item"		"item_cyclone_custom"
+		"item"		"item_blink"
+		"item"		"item_echo_sabre"
+		"item"		"item_blade_mail"
+		"item"		"item_ghost"
+		"item"		"item_black_king_bar"
+		"item"		"item_aeon_disk_custom"
+		"item"		"item_octarine_core1"
+		"item"		"item_nullifier"
+		"item"		"item_shivas_guard"
+
+	}
+	
+	"secretshop"
+	{
+		"item"		"item_energy_booster"
+		"item"		"item_vitality_booster"
+		"item"		"item_point_booster"
+		"item"		"item_platemail"
+		"item"		"item_talisman_of_evasion"
+		"item"		"item_hyperstone"
+		"item"		"item_ultimate_orb"
+		"item"		"item_demon_edge"
+		"item"		"item_mystic_staff"
+		"item"		"item_reaver"
+		"item"		"item_eagle"
+		"item"		"item_relic"
+		"item"		"item_imba_occult_mask"
+	}
+
+	"pregame"
+	{
+
+		"item"		"item_boots"
+
+	}
+}

@@ -1,0 +1,1014 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Travel Boots
+	//=================================================================================================================
+	"item_boots"
+	{
+		"SideShop"						"1"
+
+		"ItemCost"			"500"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"		"15"
+			}
+			
+		}
+	}	
+
+	//=================================================================================================================
+	// Recipe: Travel Boots
+	//=================================================================================================================
+	"item_recipe_travel_boots"
+	{
+		"ItemCost"						"50"	
+		"ItemShopTags"					""
+		"SideShop"						"1"
+		"SideShop"						"1"
+		
+		"ItemRequirements"
+		{
+			"01"						"item_boots;item_boots_recipe"
+		}
+	}
+	
+	//=================================================================================================================
+	// Recipe: Travel Boots
+	//=================================================================================================================
+	"item_recipe_travel_boots_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"219"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50"	
+		"ItemShopTags"					""
+		"SideShop"						"1"
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_travel_boots_2"
+		"ItemRequirements"
+		{
+			"01"						"item_travel_boots;item_boots_recipe"
+		}
+	}
+
+	//=================================================================================================================
+	// Travel Boots
+	//=================================================================================================================
+	"item_travel_boots"
+	{
+		"AbilityCooldown"				"40.0"
+
+		"AbilityChannelTime"			"1.0"
+		
+		"AbilityManaCost"				"100"
+		"SideShop"						"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"		"22"
+			}
+			
+		}
+	}
+	//=================================================================================================================
+	// Travel Boots
+	//=================================================================================================================
+	"item_travel_boots_2"
+	{
+		"AbilityCooldown"				"40.0"
+
+		"AbilityChannelTime"			"1.0"
+		
+		"AbilityManaCost"				"100"
+		"SideShop"						"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"		"30"
+			}
+			
+		}
+	}
+	//=================================================================================================================
+	// Recipe: Phase Boots
+	//=================================================================================================================
+	"item_recipe_phase_boots1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"item_recipe"
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50"	
+		"ItemShopTags"					""
+
+		"SideShop"						"1"
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_phase_boots1"
+		"ItemRequirements"
+		{
+			"01"						"item_phase_boots;item_boots_recipe"
+		}
+	}
+	
+	//=================================================================================================================
+	// Phase Boots
+	//=================================================================================================================
+	"item_phase_boots1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_phase_boots"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"8.0"
+		"SideShop"						"1"
+
+	
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"20"
+			}
+		
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"phase_movement_speed"  "25"
+			}		
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"phase_movement_speed_range"  "25"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"phase_duration"		"2.5"
+			}
+		
+		}
+	}
+
+	"item_boots_recipe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityTextureName" 			"item_recipe"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"BaseClass"						"item_datadriven"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"	
+		"SideShop"						"1"
+		
+	}
+	"item_recipe_tranquil_boots"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+//		"BaseClass"						"item_datadriven"
+//		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"SideShop"						"1"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50"
+		"ItemShopTags"					""
+		"SideShop"						"1"
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_tranquil_boots"
+		"ItemRequirements"
+		{
+			"01"						"item_boots;item_boots_recipe"
+		}
+	}
+
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_tranquil_boots"
+	{		
+		"AbilityCooldown"				"8"
+		"SideShop"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_duration"			"20.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"250"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_interval"			"0.334"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_time"			"8"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_count"			"1"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_threshold"		"20"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"broken_movement_speed"	"15"
+			}
+		}
+	}
+	"item_recipe_tranquil_boots1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"item_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"SideShop"						"1"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50"
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_tranquil_boots1"
+		"ItemRequirements"
+		{
+			"01"						"item_tranquil_boots;item_boots_recipe"
+		}
+	}
+
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_tranquil_boots1"
+	{		
+		"BaseClass"						"item_tranquil_boots"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCooldown"				"8"
+		"SideShop"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"13"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_duration"			"20.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"250"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_interval"			"0.334"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_time"			"8"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_count"			"1"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"break_threshold"		"20"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"broken_movement_speed"	"20"
+			}
+		}
+	}
+
+	"item_magic_wand_custom"
+	{		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"BaseClass"						"item_magic_wand"
+		"SideShop"						"1"
+
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"10"
+		"ItemCost"						"500"
+		"SideShop"						"1"
+
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"restore_per_charge"	"5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_charges"			"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"charge_radius"			"1500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health_regen"				"0"
+			}
+		}
+
+	}
+	
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_force_staff_custom"
+	{		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"BaseClass"						"item_force_staff"
+		"SideShop"						"1"
+
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"10"
+		"AbilityCastRange"				"600"
+
+		"ItemCost"						"1500"
+		"SideShop"						"1"
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"push_length"			"400"
+			}		
+		}
+
+	}
+	"item_aether_lens_custom"
+	{		
+		"BaseClass"						"item_aether_lens"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SideShop"						"1"
+		"ItemCost"						"1500"
+		"SideShop"						"1"
+
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_mana_regen"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_bonus"	"250"
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_glimmer_cape_custom"
+	{		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"BaseClass"						"item_glimmer_cape"
+		"SideShop"						"1"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"15"
+		"ItemCost"						"1500"
+		"ItemCost"						"1500"
+		"SideShop"						"1"
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_magical_armor"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_delay"			"0.5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"active_magical_armor"	"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.5"
+			}
+		}
+
+	}
+
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_rod_of_atos_custom"
+	{		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"BaseClass"						"item_rod_of_atos"
+		"SideShop"						"1"
+
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"15"
+
+		"ItemCost"						"1500"
+		"SideShop" 						"1"
+
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"	"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"1.5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"1250"
+			}
+
+		}
+	}
+	
+	"item_cyclone_custom"
+	{		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"BaseClass"						"item_cyclone"
+		"SideShop"						"1"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"15"
+		"ItemCost"						"1500"
+		"SideShop"						"1"
+
+		"AbilityDamage"					"50"
+		"AbilityCastRange"				"650"		
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"8"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cyclone_duration"		"1.75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_tooltip"			"650"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_drop_damage"	"50"
+			}
+
+		}
+	}
+
+	//=================================================================================================================
+	// Tranquil Boots
+	//=================================================================================================================
+	"item_aeon_disk_custom"
+	{		
+		"BaseClass"						"item_aeon_disk"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SideShop"						"1"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"50"
+		"ItemCost"						"2500"
+		"SideShop"						"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_threshold_pct"		"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"buff_duration"		"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"status_resistance"		"20"
+			}
+				
+		}
+
+	}
+
+	//=================================================================================================================
+	// Blink Dagger
+	//=================================================================================================================
+	"item_blink"
+	{
+		"SideShop"						"1"
+
+		"ItemCost"						"1500"	
+		"AbilityCooldown"				"10"
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range"			"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blink_damage_cooldown"	"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range_clamp"		"500"
+			}
+		}
+	}
+		
+
+	//=================================================================================================================
+	// Octarine Core
+	//=================================================================================================================
+	"item_octarine_core1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2121"
+		"BaseClass"						"item_octarine_core"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SideShop"						"1"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySharedCooldown"			"octarine"
+		"SideShop" 						"1"
+
+		"ItemCost"						"2500"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"mana;mb;octarine core"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intelligence"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hero_lifesteal"		"0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Octarine Core
+	//=================================================================================================================
+	"item_octarine_core2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2123"
+		"BaseClass"						"item_octarine_core"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SideShop"						"1"
+		
+	// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2500"
+		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"mana;mb;octarine core"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intelligence"	"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"425"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"425"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hero_lifesteal"		"25"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"creep_lifesteal"		"5"
+			}	
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"active_duration"		"7"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Recipe: Octarine Core
+	//=================================================================================================================
+	"item_recipe_octarine_core3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2124"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"SideShop"						"1"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_octarine_core3"
+		"ItemRequirements"
+		{
+			"01"						"item_octarine_core2"
+		}
+	}
+
+	//=================================================================================================================
+	// Octarine Core
+	//=================================================================================================================
+	"item_octarine_core3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2125"
+		"BaseClass"						"item_octarine_core"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SideShop"						"1"
+		"AbilityTextureName"			"custom/octarinity"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+	// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5000"
+		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"mana;mb;octarine core"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intelligence"	"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"425"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"425"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hero_lifesteal"		"25"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"creep_lifesteal"		"5"
+			}	
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"active_duration"		"7"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Bag of Gold
+	//=================================================================================================================
+	"item_bag_of_gold"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityName"					"item_bag_of_gold"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"Model"							"models/props_gameplay/gold_bag.vmdl"
+		"ItemKillable"					"0"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemKillable"					"0"
+	}
+
+	"item_bonus_health1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3057"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_health_tome"
+		
+		"Model"							"models/props_gameplay/heart001.vmdl"
+		"Effect"						"particles/econ/courier/courier_trail_divine/courier_divine_ambient.vpcf"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"1"
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"1"
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge" 
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"scripts/vscripts/items.lua"
+				"Function"				"HealthTomeUsed"
+			}
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_purification_b.vpcf" //"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_chakra_magic.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+			//"FireEffect"
+			//{
+			//	"Target" "CASTER"
+			//	"EffectName"		"particles/generic_hero_status/hero_levelup_flash_hit.vpcf"
+			//	"EffectAttachType" 	"follow_origin"
+			//}			
+		}
+	
+		"Modifiers"
+			{
+			"tome_health_modifier"
+				{
+				"Attributes"		"MODIFIER_ATTRIBUTE_PERMANENT"				
+				"TextureName"	 	"item_health_tome"
+				"IsBuff"			"1"
+				"Properties"
+					{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"25"
+					}
+				}
+			}
+	
+	}
+}
